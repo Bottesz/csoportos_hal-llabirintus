@@ -1,5 +1,5 @@
-from Character import Enemy
 from Character import Player
+from Character import Enemy
 import oldalak
 
 class Jatekter:
@@ -23,18 +23,23 @@ class Jatekter:
 
 
     def jatekmenet(self):
+        oldalszam=oldalak.oldalak(1,self.player)
         while(self.player.hp>0 and self.Godzilla.hp> 0):
-            self.player.poz() 
-            self.Godzilla.enemy_poz() 
+            self.player.poz
+            self.Godzilla.enemy_poz 
             lista=["_","_"]
             self.lista[self.player.poz]=self.player.emo
             self.lista[self.Godzilla.enemy_poz]=self.Godzilla.emo_e
             if (self.player.poz==self.Godzilla.enemy_poz):
                 self.lista[self.Godzilla.enemy_poz]="⚔"
-                self.player.hp()
-                self.Godzilla.hp()
+                self.player.hp
+                self.Godzilla.hp
             self.kor+=1
             self.kiir()
             input()
             oldalak.oldalak(self.player)
+<<<<<<< HEAD
+            oldalak.oldalak(oldalszam,self.player)
+=======
             
+>>>>>>> c54819f92d4e5068f5f87b102169a32db4f3650d

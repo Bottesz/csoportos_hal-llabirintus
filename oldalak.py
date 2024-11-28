@@ -1,23 +1,37 @@
 from Character import Player
 
-def oldalak(oldal_szam,player,hp):
+def oldalak(oldal_szam,player):
         
         if oldal_szam == 1:
             print("1. oldal:\nEgy kőasztalhoz érsz. Mit teszel?")
             print("1) Kinyitod a saját neveddel ellátott dobozt (270. oldal).")
             print("2) Továbbmész észak felé (66. oldal).")
-            return [(270, "Kinyitod a dobozt"), (66, "Továbbmész észak felé")]
-
+            if oldal_szam==1:
+                print("Kinyitod a dobozt! Lapozz a 270.oldalra. ")
+                return 270
+            elif oldal_szam==2:
+                print("Továbbmész Észak felé! Lapozz a 66.oldalra")
+                return 66
+            
         elif oldal_szam == 270:
             print("270. oldal:\nTalálsz két aranypénzt és egy tanácsot.")
-            player(2)
-            return [(66, "Továbbmész észak felé")]
+            player.set_gold(2)
+            if oldal_szam==270:
+                print("Továbbmész észak felé")
+                return 66
+            
 
         elif oldal_szam == 66:
             print("66. oldal:\nElágazáshoz érsz.")
             print("1) Nyugat felé mész (293. oldal).")
             print("2) Kelet felé mész (56. oldal).")
-            return [(293, "Nyugat felé"), (56, "Kelet felé")]
+            if oldal_szam==293:
+                print("Nyugat felé")
+                return 293
+            elif oldal_szam==56:
+                print( "Kelet felé")
+                return 56
+            
 
         elif oldal_szam == 56:
             print("56. oldal:\nEgy akadállyal találkozol.")
