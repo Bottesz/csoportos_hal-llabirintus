@@ -42,7 +42,7 @@ def Oldalak(self,oldal_szam):
 
         elif oldal_szam == 387:
             print("387. oldal:\nEgy Barlangi Emberrel találkozol. Harcolnod kell!")
-            self.fight(Character("Barlangi Ember", 7, 7, 0))
+            self.fight(Player("Barlangi Ember", 7, 7, 0))
             return []
 
         else:
