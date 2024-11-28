@@ -17,12 +17,13 @@ class Player:
         return random.randint(1,6)+6
     
     def __str__(self):
-        return (f"Skill: {self.skill}, HP: {self.hp}, Luck: {self.luck}")
+        return (f"Skill: {self.skill}, HP: {self.hp}, Luck: {self.luck}, Karakter: {self.emo}")
     
-class Energy:
-    def __init__(self,skill,hp):
+class Enemy:
+    def __init__(self,skill,hp,emo_e:str="E"):
         self.skill=skill
         self.hp=hp
+        self.emo_e=emo_e
 
     def __str__(self):
-        return (f"Skill: {self.skill}, HP: {self.hp}")
+        return (f"Skill: {self.skill}, HP: {self.hp}, Karakter: {self.emo_e}")
