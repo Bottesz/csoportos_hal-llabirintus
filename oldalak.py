@@ -10,7 +10,7 @@ def oldalak(oldal_szam,player,hp):
 
         elif oldal_szam == 270:
             print("270. oldal:\nTalálsz két aranypénzt és egy tanácsot.")
-            self.player.adjust_gold(2)
+            player(2)
             return [(66, "Továbbmész észak felé")]
 
         elif oldal_szam == 66:
@@ -31,7 +31,7 @@ def oldalak(oldal_szam,player,hp):
 
         elif oldal_szam == 215:
             print("215. oldal:\nMegsebez a spóra, életerőd csökken.")
-            self.player.adjust_health(-2)
+            player.set_hp(+2)
             return [(56, "Kelet felé folytatod az utat.")]
 
         elif oldal_szam == 293:
