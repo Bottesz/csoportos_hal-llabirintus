@@ -1,10 +1,10 @@
-from Character import Enemy
 from Character import Player
+from Character import Enemy
 
 class Jatekter:
     def __init__(self):
         self.player=Player(0,"Warrior",0,0,"🤺",0,0)
-        self.Godzilla=Enemy(0,"Monster",0,"🐱‍🐉",1)
+        self.Godzilla=Enemy(0,0,"🐱‍🐉",1,"Monster")
         self.lista=["_","_"]
         self.lista[self.player.poz]=self.player.emo
         self.lista[self.Godzilla.enemy_poz]=self.Godzilla.emo_e
