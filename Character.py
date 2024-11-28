@@ -23,7 +23,7 @@ class Player:
         return (f"Skill: {self.skill}, Név: {self.Warrior_name} HP: {self.hp}, Luck: {self.luck}, Karakter: {self.emo}, Pozíció: {self.poz}")
     
 class Enemy:
-    def __init__(self,skill,hp,emo_e:str="E", enemy_poz:int=0, enemy_name:str="Monster"):
+    def __init__(self,skill,hp,emo_e:str="👺", enemy_poz:int=0, enemy_name:str="Monster"):
         self.skill=skill
         self.hp=hp
         self.emo_e=emo_e
