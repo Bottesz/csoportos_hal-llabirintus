@@ -6,6 +6,12 @@ def oldalak(oldal_szam,player):
             print("1. oldal:\nEgy kőasztalhoz érsz. Mit teszel?")
             print("1) Kinyitod a saját neveddel ellátott dobozt (270. oldal).")
             print("2) Továbbmész észak felé (66. oldal).")
+<<<<<<< HEAD
+            if oldal_szam == 1:
+                kerdes:int=int(input("1-es ha ládát nyitsz, 2 es ha továbbmész északra: "))
+            return [(270, "Kinyitod a dobozt"), (66, "Továbbmész észak felé")]
+
+=======
             if oldal_szam==1:
                 print("Kinyitod a dobozt! Lapozz a 270.oldalra. ")
                 return 270
@@ -13,6 +19,7 @@ def oldalak(oldal_szam,player):
                 print("Továbbmész Észak felé! Lapozz a 66.oldalra")
                 return 66
             
+>>>>>>> 420d7ea6c1e58b393c466167765b870b3c520954
         elif oldal_szam == 270:
             print("270. oldal:\nTalálsz két aranypénzt és egy tanácsot.")
             player.set_gold(2)

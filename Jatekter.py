@@ -39,7 +39,11 @@ class Jatekter:
             input()
             oldalak.oldalak(self.player)
 <<<<<<< HEAD
+<<<<<<< HEAD
+            oldalak.oldalak(self,self.player)
+=======
             oldalak.oldalak(oldalszam,self.player)
+>>>>>>> 420d7ea6c1e58b393c466167765b870b3c520954
 =======
             
 >>>>>>> c54819f92d4e5068f5f87b102169a32db4f3650d
