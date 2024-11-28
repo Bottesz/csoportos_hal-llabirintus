@@ -8,7 +8,7 @@ class Jatekter:
         self.Godzilla=Enemy(0,"Monster",0,"🐱‍🐉",1)
         self.lista=["_","_"]
         self.lista[self.player.poz]=self.player.emo
-        self.lista[self.Godzilla.poz]=self.Godzilla.emo
+        self.lista[self.Godzilla.enemy_poz]=self.Godzilla.emo_e
         self.kor=1
         self.kiir()
 
@@ -24,15 +24,15 @@ class Jatekter:
 
     def jatekmenet(self):
         while(self.player.hp>0 and self.Godzilla.hp> 0):
-            self.player.set_pozicio() #lépett a harcos
-            self.Godzilla.set_pozicio() #lépett a varázslo
-            lista=["_","_","_"]
-            self.lista[self.harcos.poz]=self.harcos.emo
-            self.lista[self.varazslo.poz]=self.varazslo.emo
-            if (self.harcos.poz==self.varazslo.poz):
-                self.lista[self.varazslo.poz]="⚔"
-                self.harcos.set_hp()
-                self.varazslo.set_hp()
+            self.player.poz() 
+            self.Godzilla.enemy_poz() 
+            lista=["_","_"]
+            self.lista[self.player.poz]=self.player.emo
+            self.lista[self.Godzilla.enemy_poz]=self.Godzilla.emo_e
+            if (self.player.poz==self.Godzilla.enemy_poz):
+                self.lista[self.Godzilla.enemy_poz]="⚔"
+                self.player.hp()
+                self.Godzilla.hp()
             self.kor+=1
             self.kiir()
             input()
