@@ -1,11 +1,13 @@
 from Character import Player
 
-def oldalak(oldal_szam,player,hp):
+def oldalak(oldal_szam,player):
         
         if oldal_szam == 1:
             print("1. oldal:\nEgy kőasztalhoz érsz. Mit teszel?")
             print("1) Kinyitod a saját neveddel ellátott dobozt (270. oldal).")
             print("2) Továbbmész észak felé (66. oldal).")
+            if oldal_szam == 1:
+                kerdes:int=int(input("1-es ha ládát nyitsz, 2 es ha továbbmész északra: "))
             return [(270, "Kinyitod a dobozt"), (66, "Továbbmész észak felé")]
 
         elif oldal_szam == 270:

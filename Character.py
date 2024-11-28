@@ -29,11 +29,18 @@ class Player:
     
 class Enemy:
     def __init__(self, skill:int=0, hp:int=0, emo_e:str="👺", enemy_poz:int=0, enemy_name:str="Monster"):
-        self.skill=skill
+        self.skill=self.dobas_skill()
         self.enemy_name=enemy_name
-        self.hp=hp
+        self.hp=self.dobas_hp()
         self.emo_e=emo_e
         self.enemy_poz=enemy_poz
+
+    def dobas_skill(self):
+        return random.randint(1,6)+6
+    
+    def dobas_hp(self):
+        return random.randint(1,6)+ random.randint(1,6)+12
+
     def __str__(self):
         return (f"Skill: {self.skill}, Név: {self.enemy_name}, HP: {self.hp}, Karakter: {self.emo_e}, Pozíció: {self.enemy_poz}")
  
