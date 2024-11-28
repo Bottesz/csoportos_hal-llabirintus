@@ -15,7 +15,7 @@ class Jatekter:
     def kiir(self):
         print(f"{self.kor}. kör")
         print("*"*15," ","-"*27," "*29," ")
-        print(f"* {self.lista[0]:<3} {self.lista[1]:^3} {self.lista[2]:>3} * | A {self.harcos.nev}| A {self.varazslo.nev} életereje: {self.varazslo.hp} | Ügyessége FoxRudy-nak: {self.skill} , Név: {self.Warrior_name} HP: {self.hp}, Luck: {self.luck}, Karakter: {self.emo}, Pozíció: {self.poz} |")
+        print(f"* {self.lista[0]:<2} {self.lista[1]:^2} * | A {self.player.Warrior_name}, Életereje: {self.player.hp}, Támadóereje: {self.player.skill}, Szerencséje: {self.player.luck}, Arany: {self.player.gold}, Item: {self.player.item} |A {self.Godzilla.enemy_name} Életereje: {self.Godzilla.hp}, Támadóereje: {self.Godzilla.skill}|")
         print("*"*15," ","-"*27," "*29," ")
         print("")
 
