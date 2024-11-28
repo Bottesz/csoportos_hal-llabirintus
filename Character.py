@@ -11,6 +11,12 @@ class Player:
         self.gold=gold
         self.item=item
     
+    def set_hp(self,hp):
+        self.hp -= hp
+
+    def set_gold(self,gold):
+        self.gold+=gold;
+        
     def dobas_skill(self):
         return random.randint(1,6)+6
     
