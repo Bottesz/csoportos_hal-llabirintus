@@ -12,7 +12,7 @@ def Oldalak(self, oldal_szam):
             return [(66, "Továbbmész észak felé")]
 
         elif oldal_szam == 66:
-            print("66. oldal:\nElágazáshoz érsz.")
+            print("66. oldal:\nElágazáshoz érsz.") 
             print("1) Nyugat felé mész (293. oldal).")
             print("2) Kelet felé mész (56. oldal).")
             return [(293, "Nyugat felé"), (56, "Kelet felé")]
