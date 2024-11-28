@@ -1,5 +1,6 @@
 from Character import Enemy
 from Character import Player
+import oldalak
 
 class Jatekter:
     def __init__(self):
@@ -35,3 +36,4 @@ class Jatekter:
             self.kor+=1
             self.kiir()
             input()
+            oldalak.oldalak(self.player)
