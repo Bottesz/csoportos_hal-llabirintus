@@ -1,6 +1,6 @@
 from Character import Player
 
-def Oldalak(oldal_szam, player):
+def oldalak(oldal_szam,player,hp):
         
         if oldal_szam == 1:
             print("1. oldal:\nEgy kőasztalhoz érsz. Mit teszel?")
@@ -10,7 +10,13 @@ def Oldalak(oldal_szam, player):
 
         elif oldal_szam == 270:
             print("270. oldal:\nTalálsz két aranypénzt és egy tanácsot.")
+
             player(2)
+
+            player(2)
+
+            self.player.adjust_gold(2)
+
             return [(66, "Továbbmész észak felé")]
 
         elif oldal_szam == 66:
@@ -42,7 +48,7 @@ def Oldalak(oldal_szam, player):
 
         elif oldal_szam == 387:
             print("387. oldal:\nEgy Barlangi Emberrel találkozol. Harcolnod kell!")
-            self.fight(Player("Barlangi Ember", 7, 7, 0))
+            (Player("Barlangi Ember", 7, 7, 0))
             return []
 
         else:
