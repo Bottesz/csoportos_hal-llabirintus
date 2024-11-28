@@ -1,7 +1,7 @@
 import random
 
 class Player:
-    def __init__(self,skill:int=0,Warrior_name:str="FoxRudy", hp:int=0, luck:int=0, emo:str="H", poz:int=0, gold:int=0):
+    def __init__(self,skill:int=0,Warrior_name:str="FoxRudy", hp:int=0, luck:int=0, emo:str="H", poz:int=0, gold:int=0,item:int=0):
         self.skill=self.dobas_skill()
         self.Warrior_name=Warrior_name
         self.hp=self.dobas_hp()
@@ -9,6 +9,7 @@ class Player:
         self.emo=emo
         self.poz=poz
         self.gold=gold
+        self.item=item
     
     def dobas_skill(self):
         return random.randint(1,6)+6
