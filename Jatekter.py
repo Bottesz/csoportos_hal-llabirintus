@@ -4,12 +4,11 @@ from Character import Player
 
 class Jatekter:
     def __init__(self):
-        self.player=Player("harcos","🤺",0)
-        self.Godzilla=Player("Mágus","🐱‍🐉",1)
+        self.player=Player(0,"Warrior",0,0,"🤺",0,0)
+        self.Godzilla=Player(0,"Monster",0,0,"🐱‍🐉",1,0)
         self.lista=["_","_"]
         self.lista[self.player.poz]=self.player.emo
         self.lista[self.Godzilla.poz]=self.Godzilla.emo
-        self.kor=1
         self.kiir()
 
 
