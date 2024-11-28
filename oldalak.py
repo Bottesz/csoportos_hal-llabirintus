@@ -10,11 +10,11 @@ def Oldalak(self,oldal_szam):
 
         elif oldal_szam == 270:
             print("270. oldal:\nTalálsz két aranypénzt és egy tanácsot.")
-            self.warrior.adjust_gold(2)
+            self.player.adjust_gold(2)
             return [(66, "Továbbmész észak felé")]
 
         elif oldal_szam == 66:
-            print("66. oldal:\nElágazáshoz érsz.") 
+            print("66. oldal:\nElágazáshoz érsz.")
             print("1) Nyugat felé mész (293. oldal).")
             print("2) Kelet felé mész (56. oldal).")
             return [(293, "Nyugat felé"), (56, "Kelet felé")]
@@ -31,7 +31,7 @@ def Oldalak(self,oldal_szam):
 
         elif oldal_szam == 215:
             print("215. oldal:\nMegsebez a spóra, életerőd csökken.")
-            self.player.adjust_hp(-2)
+            self.player.adjust_health(-2)
             return [(56, "Kelet felé folytatod az utat.")]
 
         elif oldal_szam == 293:
@@ -42,7 +42,7 @@ def Oldalak(self,oldal_szam):
 
         elif oldal_szam == 387:
             print("387. oldal:\nEgy Barlangi Emberrel találkozol. Harcolnod kell!")
-            self.fight(Player("Barlangi Ember", 7, 7, 0))
+            self.fight(Character("Barlangi Ember", 7, 7, 0))
             return []
 
         else:
