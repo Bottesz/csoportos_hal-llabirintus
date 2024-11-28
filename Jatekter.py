@@ -24,9 +24,9 @@ class Jatekter:
 
     def jatekmenet(self):
         while(self.player.hp>0 and self.Godzilla.hp> 0):
-            self.player.poz() #lépett a harcos
-            self.Godzilla.enemy_poz() #lépett a varázslo
-            lista=["_","_","_"]
+            self.player.poz() 
+            self.Godzilla.enemy_poz() 
+            lista=["_","_"]
             self.lista[self.player.poz]=self.player.emo
             self.lista[self.Godzilla.enemy_poz]=self.Godzilla.emo_e
             if (self.player.poz==self.Godzilla.enemy_poz):
