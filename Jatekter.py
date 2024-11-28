@@ -36,4 +36,5 @@ class Jatekter:
             self.kor+=1
             self.kiir()
             input()
+            oldalak.oldalak(self.player)
             
