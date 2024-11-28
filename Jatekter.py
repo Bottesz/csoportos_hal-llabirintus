@@ -1,4 +1,3 @@
-
 from Character import Enemy
 from Character import Player
 
