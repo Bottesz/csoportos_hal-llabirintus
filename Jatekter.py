@@ -23,14 +23,14 @@ class Jatekter:
 
 
     def jatekmenet(self):
-        while(self.harcos.hp>0 and self.varazslo.hp> 0):
-            self.harcos.set_pozicio() #lépett a harcos
-            self.varazslo.set_pozicio() #lépett a varázslo
-            lista=["_","_","_"]
-            self.lista[self.harcos.poz]=self.harcos.emo
-            self.lista[self.varazslo.poz]=self.varazslo.emo
-            if (self.harcos.poz==self.varazslo.poz):
-                self.lista[self.varazslo.poz]="⚔"
+        while(self.player.hp>0 and self.Godzilla.hp> 0):
+            self.player.set_pozicio() 
+            self.Godzilla.set_pozicio() 
+            lista=["_","_"]
+            self.lista[self.player.poz]=self.harcos.emo
+            self.lista[self.Godzilla.poz]=self.varazslo.emo
+            if (self.player.poz==self.Godzilla.poz):
+                self.lista[self.Godzilla.poz]="⚔"
                 self.harcos.set_hp()
                 self.varazslo.set_hp()
             self.kor+=1
