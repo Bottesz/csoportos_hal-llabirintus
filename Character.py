@@ -36,15 +36,6 @@ class Enemy:
         self.hp=self.dobas_hp()
         self.emo_e=emo_e
         self.enemy_poz=enemy_poz
-<<<<<<< HEAD
-        
-    def dobas_skill(self):
-         return random.randint(1,6)+6
-    
-    def dobas_hp(self):
-        return random.randint(1,6)+ random.randint(1,6)+12
-        
-=======
 
     def dobas_skill(self):
         return random.randint(1,6)+6
@@ -52,7 +43,6 @@ class Enemy:
     def dobas_hp(self):
         return random.randint(1,6)+ random.randint(1,6)+12
 
->>>>>>> c54819f92d4e5068f5f87b102169a32db4f3650d
     def __str__(self):
         return (f"Skill: {self.skill}, Név: {self.enemy_name}, HP: {self.hp}, Karakter: {self.emo_e}, Pozíció: {self.enemy_poz}")
  
